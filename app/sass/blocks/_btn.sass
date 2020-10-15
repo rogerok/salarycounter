@@ -1,7 +1,10 @@
 .btn-wrap
+    display: flex
+    justify-content: space-around
+    align-items: center
     text-align: center
-.add-btn
-    width: 40%
+.btn
+    flex: 0 1 30%
     height: 50px
     margin-bottom: 5vh
     background-color: $black
@@ -12,3 +15,9 @@
     transition: .3s all
     &:hover
         box-shadow: 5px 10px 10px $warm-grey
+
+.btn_disabled
+    cursor: not-allowed
+    pointer-events: none
+    background-color: $warm-grey
+    border-color: $warm-grey
